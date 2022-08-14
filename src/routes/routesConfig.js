@@ -12,6 +12,10 @@ const routesConfig = [
     element: <PeoplePage />
   },
   {
+    path: '/not-found',
+    element: <NotFoundPage />
+  },
+  {
     path: '*',
     element: <NotFoundPage />
   }
