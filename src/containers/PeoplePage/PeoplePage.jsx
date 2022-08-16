@@ -4,7 +4,7 @@ import PropTypes from "prop-types";
 import { withErrorApi } from "@hoc-helpers/withErrorApi"
 import PeopleList from "@components/PeoplePage/PeopleList";
 import PeopleNavigation from "@components/PeoplePage/PeopleNavigation";
-import { changeHTTP, getApiResponse } from "@utils/network";
+import { changeHTTP, getApiResource } from "@utils/network";
 import { getPeopleId, getPeopleImage, getPeoplePageId } from "@services/getPeopleData";
 import { API_PEOPLE } from "@constants/api.js";
 import { useQueryParams } from "@hooks/useQueryParams";
@@ -21,7 +21,7 @@ const PeoplePage = ({ setErrorApi }) => {
   const queryPage = query.get('page');
 
   const getResponse = async (url) => {
-    const res = await getApiResponse(url);
+    const res = await getApiResource(url);
 
     if (res) {
       const peopleList = res.results.map(({ name, url }) => {
@@ -43,7 +43,7 @@ const PeoplePage = ({ setErrorApi }) => {
 
   useEffect(() => {
     getResponse(API_PEOPLE + queryPage)
-  }, [queryPage]);
+  }, []);
 
   return (
     <>
