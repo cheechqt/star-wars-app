@@ -4,6 +4,7 @@ import { useParams } from "react-router";
 
 import { withErrorApi } from "@hoc-helpers/withErrorApi";
 
+import PersonLinkBack from "@components/PersonPage/PersonLinkBack";
 import PersonInfo from "@components/PersonPage/PersonInfo";
 import PersonPhoto from "@components/PersonPage/PersonPhoto";
 
@@ -49,18 +50,21 @@ const PersonPage = ({ match, setErrorApi }) => {
   }, []);
 
   return (
-    <div className={styles.wrapper}>
-      <span className={styles.person__name}>{personName}</span>
+    <>
+      <PersonLinkBack />
+      <div className={styles.wrapper}>
+        <span className={styles.person__name}>{personName}</span>
 
-      <div className={styles.person__inner}>
-      <PersonPhoto
-        personPhoto={personPhoto}
-        personName={personName}
-        />
+        <div className={styles.person__inner}>
+          <PersonPhoto
+            personPhoto={personPhoto}
+            personName={personName}
+          />
 
-      {personInfo && <PersonInfo personInfo={personInfo} />}
+          {personInfo && <PersonInfo personInfo={personInfo} />}
         </div>
-    </div>
+      </div>
+    </>
   )
 }
 

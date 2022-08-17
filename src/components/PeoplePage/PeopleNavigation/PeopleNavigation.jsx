@@ -6,8 +6,6 @@ import UiButton from "@components/UI/UiButton";
 import styles from './PeopleNavigation.module.css';
 
 
-
-
 const PeopleNavigation = ({
   getResponse,
   prevPage,

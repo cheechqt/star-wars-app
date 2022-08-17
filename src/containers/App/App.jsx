@@ -1,6 +1,7 @@
-import routesConfig from "@routes/routesConfig";
 import { NavLink, Route, Routes, BrowserRouter } from "react-router-dom";
 import Header from "@components/Header";
+import routesConfig from "@routes/routesConfig";
+
 import styles from './App.module.css';
 
 const App = () => {
