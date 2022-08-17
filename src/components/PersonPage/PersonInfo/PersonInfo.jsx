@@ -3,12 +3,12 @@ import styles from './PersonInfo.module.css';
 
 const PersonInfo = ({ personInfo }) => {
   return (
-    <div>
-      <ul>
+    <div className={styles.wrapper}>
+      <ul className={styles.list__inner}>
         {personInfo.map(({ title, data }) => (
           data && (
-            <li key={title}>
-              <span>
+            <li className={styles.list__item} key={title}>
+              <span className={styles.item__title}>
                 {title}: {data}
               </span>
             </li>

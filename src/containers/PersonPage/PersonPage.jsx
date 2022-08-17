@@ -50,14 +50,16 @@ const PersonPage = ({ match, setErrorApi }) => {
 
   return (
     <div className={styles.wrapper}>
-      <h1>{personName}</h1>
+      <span className={styles.person__name}>{personName}</span>
 
+      <div className={styles.person__inner}>
       <PersonPhoto
         personPhoto={personPhoto}
         personName={personName}
-      />
+        />
 
       {personInfo && <PersonInfo personInfo={personInfo} />}
+        </div>
     </div>
   )
 }
