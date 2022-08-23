@@ -45,17 +45,26 @@
     0 6px 30px 5px rgba(0, 0, 0, 0.1),
     0 8px 10px -5px rgba(0, 0, 0, 0.2);
 
-  --theme-default-header: #cccc46;
-  --theme-default-bgimage: url(@static/bg.jpg)
+
+  /* Themes */
+  --theme-light-header: #dfe2df;
+  --theme-dark-header: #ca6c6f;
+  --theme-neutral-header: #cccc46;
+  --theme-default-header: var(--theme-neutral-header);
+
+  --theme-light-bgimage: linear-gradient(to left bottom, #051937, #004d7a, #008793, #00bf72, #a8eb12);;
+  --theme-dark-bgimage: linear-gradient(to left top, #c44444, #ae483c, #994936, #854933, #714733);
+  --theme-neutral-bgimage: url(@static/bg.jpg);
+  --theme-default-bgimage: var(--theme-neutral-bgimage);
 }
 
 body {
   margin: 0;
   padding: 0;
-  background-color: var(--color-dark-brown);
   font-family: var(--font-family-main);
   font-size: var(--font-size-main);
-  /* background-image: var(--theme-default-bgimage); */
+  /* background-color: var(--color-dark-brown); */
+  background-image: var(--theme-default-bgimage);
   background-size: cover;
   background-repeat: no-repeat;
   background-attachment: fixed;
