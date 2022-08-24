@@ -6,7 +6,7 @@ import Favorite from '@components/Favorite';
 import lightIcon from "./img/lightsaber.svg";
 import darkIcon from "./img/space-station.svg";
 import neutralIcon from "./img/droid.svg";
-  
+
 import styles from './Header.module.css';
 
 const Header = () => {
@@ -28,18 +28,19 @@ const Header = () => {
         setIcon(darkIcon)
         break;
     }
-},[isTheme])
+  }, [isTheme])
 
   return (
     <div className={styles.container}>
       <img className={styles.logo} src={icon} alt="Star Wars" />
-      
+
       <ul className={styles.list__container}>
         <li>< NavLink to="/">Home</NavLink ></li>
         <li>< NavLink to="/people/?page=1">People</NavLink ></li>
         <li><NavLink to="/not-found">Not Found</NavLink ></li>
+        <li><NavLink to="/search">Search</NavLink ></li>
       </ul>
-      <Favorite/>
+      <Favorite />
     </div>
   )
 }
