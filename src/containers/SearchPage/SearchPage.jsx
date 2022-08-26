@@ -6,6 +6,7 @@ import { getApiResource } from "@utils/network";
 import { API_SEARCH } from "@constants/api";
 import { withErrorApi } from "@hoc-helpers/withErrorApi";
 import { getPeopleId, getPeopleImage } from "@services/getPeopleData";
+import UIinput from "@components/UI/UIinput";
 
 import SearchPageInfo from "@components/SearchPage/SearchPageInfo";
 
@@ -29,7 +30,6 @@ const SearchPage = ({ setErrorApi }) => {
           img
         }
       })
-      console.log(peopleList);
       setPeople(peopleList);
       setErrorApi(false)
     } else {
@@ -46,10 +46,7 @@ const SearchPage = ({ setErrorApi }) => {
     []
   )
 
-  const handleInputChange = (event) => {
-    const value = event.target.value;
-
-    console.log(value);
+  const handleInputChange = value => {
     setInputSearchValue(value);
     debounceGetResponse(value)
   }
@@ -58,11 +55,11 @@ const SearchPage = ({ setErrorApi }) => {
   return (
     <>
       <h1 className='header__text'>Search</h1>
-      <input
-        type="text"
+      <UIinput
         value={inputSearchValue}
-        onChange={handleInputChange}
+        handleInputChange={handleInputChange}
         placeholder="Input character's name"
+        classes={styles.input__search}
       />
       <SearchPageInfo people={people} />
     </>
