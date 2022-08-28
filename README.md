@@ -3,7 +3,7 @@
 ## Ссылки
 - [Проект] (https://cheechqt.github.io/star-wars-app/)
 - [Репозиторий] (https://github.com/cheechqt/star-wars-app)
-- [storybook] (https://cheechqt.github.io/star-wars-app//storybook/)
+- [storybook] (https://cheechqt.github.io/star-wars-app/storybook/)
 
 ## Скрипты
 ```
