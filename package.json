@@ -4,6 +4,7 @@
   "homepage": "https://cheechqt.github.io/star-wars-app/",
   "private": true,
   "dependencies": {
+    "@storybook/storybook-deployer": "^2.8.12",
     "classnames": "^2.3.1",
     "lodash": "^4.17.21",
     "prop-types": "^15.8.1",
@@ -16,13 +17,14 @@
     "redux-thunk": "^2.4.1"
   },
   "scripts": {
+    "deploy": "npm run build && npm run storybook && npm run build-gh-pages",
+    "build-storybook": "build-storybook -o ./build/storybook",
+    "deploy-storybook": "storybook-to-ghpages",
     "start": "react-app-rewired start",
     "build": "react-app-rewired build",
     "eject": "react-scripts eject",
     "storybook": "start-storybook -p 6006 -s public",
-    "build-storybook": "build-storybook -s public",
-    "build-gh-pages": "gh-pages -d build",
-    "deploy": "npm run build && npm run build-gh-pages"
+    "build-gh-pages": "gh-pages -d build"
   },
   "eslintConfig": {
     "extends": [
