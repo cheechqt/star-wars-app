@@ -17,7 +17,7 @@
     "redux-thunk": "^2.4.1"
   },
   "scripts": {
-    "deploy": "npm run build && npm run storybook && npm run build-gh-pages",
+    "deploy": "npm run build && npm run build-storybook && npm run build-gh-pages",
     "build-storybook": "build-storybook -o ./build/storybook",
     "deploy-storybook": "storybook-to-ghpages",
     "start": "react-app-rewired start",
