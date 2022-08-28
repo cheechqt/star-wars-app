@@ -19,7 +19,7 @@ import styles from './PersonPage.module.css';
 
 const PersonFilms = React.lazy(() => import('@components/PersonPage/PersonFilms'));
 
-const PersonPage = ({ match, setErrorApi }) => {
+const PersonPage = ({ setErrorApi }) => {
   const [personId, setPersonId] = useState(null);
   const [personInfo, setPersonInfo] = useState(null);
   const [personName, setPersonName] = useState(null);
@@ -28,7 +28,7 @@ const PersonPage = ({ match, setErrorApi }) => {
   const [personFavorite, setPersonFavorite] = useState(null);
 
   const storeData = useSelector(state => state.favoriteReducer);
-  const id = useParams().id;
+  const { id } = useParams();
 
   useEffect(() => {
     (async () => {
@@ -90,9 +90,7 @@ const PersonPage = ({ match, setErrorApi }) => {
 }
 
 PersonPage.propTypes = {
-  match: PropTypes.object,
   setErrorApi: PropTypes.func,
-
 }
 
 export default withErrorApi(PersonPage);
