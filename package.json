@@ -1,6 +1,7 @@
 {
   "name": "star-wars-app",
   "version": "0.1.0",
+  "homepage": "https://cheechqt.github.io/star-wars-app",
   "private": true,
   "dependencies": {
     "classnames": "^2.3.1",
