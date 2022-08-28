@@ -1,0 +1,34 @@
+{
+  "files": {
+    "main.css": "/star-wars-app/static/css/main.6c262c62.css",
+    "main.js": "/star-wars-app/static/js/main.42b82210.js",
+    "static/css/895.d0b12bb6.chunk.css": "/star-wars-app/static/css/895.d0b12bb6.chunk.css",
+    "static/js/895.138dca2f.chunk.js": "/star-wars-app/static/js/895.138dca2f.chunk.js",
+    "static/media/the-force-awakens-trailer.mp4": "/star-wars-app/static/media/the-force-awakens-trailer.80f116377f9ff1aa4822.mp4",
+    "static/media/bg.jpg": "/star-wars-app/static/media/bg.3e00c45cc9e12e6282ec.jpg",
+    "static/media/falcon.jpg": "/star-wars-app/static/media/falcon.c1d0a8d1869b3fbdb9ab.jpg",
+    "static/media/dark-side.jpg": "/star-wars-app/static/media/dark-side.e0f8cab78e4bdd7db45d.jpg",
+    "static/media/light-side.jpg": "/star-wars-app/static/media/light-side.eebc52171cd4ac0278ca.jpg",
+    "static/media/notFound.png": "/star-wars-app/static/media/notFound.1062f5e41ef989b5973a.png",
+    "static/media/lightsaber.svg": "/star-wars-app/static/media/lightsaber.eb7d4cd665426117002814db79fceef4.svg",
+    "static/media/space-station.svg": "/star-wars-app/static/media/space-station.7a027c6ec10ba7b5d8c880df5f4e65ea.svg",
+    "static/media/droid.svg": "/star-wars-app/static/media/droid.4c5bd3a7cfa94415ea2a91e6ad50121c.svg",
+    "static/media/favorite-filled.svg": "/star-wars-app/static/media/favorite-filled.d834878383bd1171458be388171d152e.svg",
+    "static/media/favorite.svg": "/star-wars-app/static/media/favorite.7c6baf0b7dc0bd21e07028032f2a9d8d.svg",
+    "static/media/cancel.svg": "/star-wars-app/static/media/cancel.b69cec7594fb67865300bf53ff6f6b50.svg",
+    "static/media/bookmark.svg": "/star-wars-app/static/media/bookmark.f79aa4d4f5290070eb0ba5f79019e23d.svg",
+    "static/media/loader-black.svg": "/star-wars-app/static/media/loader-black.dd955760d567d2b28e3c36edf0dcb6fa.svg",
+    "static/media/loader-blue.svg": "/star-wars-app/static/media/loader-blue.f7e56171b4bdd6a4e0b3c4414712912f.svg",
+    "static/media/loader-white.svg": "/star-wars-app/static/media/loader-white.613b62df7dc4848b6bbd6475f9a08329.svg",
+    "static/media/back.svg": "/star-wars-app/static/media/back.107843c610d0f659dabf28f117ddd70a.svg",
+    "index.html": "/star-wars-app/index.html",
+    "main.6c262c62.css.map": "/star-wars-app/static/css/main.6c262c62.css.map",
+    "main.42b82210.js.map": "/star-wars-app/static/js/main.42b82210.js.map",
+    "895.d0b12bb6.chunk.css.map": "/star-wars-app/static/css/895.d0b12bb6.chunk.css.map",
+    "895.138dca2f.chunk.js.map": "/star-wars-app/static/js/895.138dca2f.chunk.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.6c262c62.css",
+    "static/js/main.42b82210.js"
+  ]
+}
